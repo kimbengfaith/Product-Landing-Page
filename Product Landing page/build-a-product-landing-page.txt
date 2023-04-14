@@ -1,0 +1,263 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Landing Page</title>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header id='header'>
+      <img src='https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png' id='header-img'>
+      <nav id='nav-bar'>
+        <ul>
+          <li><a href='#features' class='nav-link'>Features</a></li>
+          <li><a href='#how-it-works' class='nav-link'>How it works</a></li>
+          <li><a href='#pricing' class='nav-link'>Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="sub-header">
+      <header>
+        <h2>Handcrafted home made pieces</h2>
+      </header>
+      <form id='form' action='https://www.freecodecamp.com/email-submit'>
+        <input type='email' placeholder="Enter your email address" id='email' name='email' required>
+        <input type='submit' value='Get started' id='submit'>
+      </form>
+    </section>
+    <div>
+      <section id='features'>
+        
+        <div class="premuim">
+          <h2>Premuim materials</h2>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+        </div>
+        
+        <div class="premuim">
+          <h2>fast Shipping</h2>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+        </div>
+        
+        <div class="premuim">
+          <h2>Quality</h2>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+        </div>
+      </section>
+      <section id='how-it-works'>
+        <iframe id='video' src='https://youtu.be/y8Yv4pnO7qc'width='420' height='310'></iframe>
+      </section>
+      <section id='pricing'>
+        
+          <div class="product">
+            <header>TECHNO</header>
+            <h2>500$</h2>
+            <ol>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum dolor.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button type="submit">Select</button>
+          </div>
+          <div class="product">
+            <header>Bass</header>
+            <h2>900$</h2>
+            <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>  
+            </ol>
+            <button type="submit">Select</button>
+          </div>
+          <div class="product">
+            <header>Valve</header>
+            <h2>1500$</h2>
+            <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>  
+            </ol>
+            <button type="submit">Select</button>
+          </div>
+        
+      </section>
+      <footer>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media(max-width:600px){
+body{
+background-color:grey;
+}
+}
+*{
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+}
+
+body{
+    font-family:sans-serif;
+    background-color:antiquewhite;
+}
+#header{
+    display:flex;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    padding: 0px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img{
+    width:40vw;
+}
+nav{
+    display:block;
+    font-weight: 400;
+}
+nav ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+li{
+    list-style:none;
+    display:list-item;
+}
+#sub-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+#hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+form{
+    display:block;
+}
+#hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+}
+#features {
+    margin-top: 30px;
+}
+#features .premuim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#how-it-works {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center
+}
+#how-it-works > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+.product > header {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.product > h2 {
+    margin-top: 15px;
+}
+.product > ol {
+    margin: 15px 0;
+}
+.product > ol > li {
+    padding: 5px 0;
+}
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+footer {
+    margin-top: 30px;
+    background-color: #ddd;
+    padding: 20px;
+}
+footer > ul > li {
+    padding: 0 10px;
+}
+footer > ul > li {
+    padding: 0 10px;
+}
+
+** end of undefined **
+
